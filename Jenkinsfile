@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clonar repositorio') {
-            steps {
-                git 'https://github.com/blancadevux/codecraft-api.git'
-            }
-        }
 
         stage('Instalar dependencias') {
             steps {
